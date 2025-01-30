@@ -5,11 +5,11 @@ const Navbar = () => {
   const { authUser, logout } = useAuthStore();
   return (
     <header className="h-12   border-b border-base-300  w-full z-40 fixed top-0 bg-base-100 backdrop-blur-lg ">
-      <nav className="container m-auto pt-2 flex items-center justify-between">
+      <nav className="container md:w-[90%] m-auto pt-2 flex items-center justify-between">
         {/* Left Section */}
         {/* Logo */}
         <div className="logo flex items-center gap-2">
-          <div className="py-1 px-2 rounded-md  bg-primary/10 cursor-pointer " >
+          <div className="py-1 px-2 rounded-md  bg-primary/10 cursor-pointer ">
             <MessageSquareShare className="size-5 text-primary" />
           </div>
           <Link to="/" className="text-base font-bold">
