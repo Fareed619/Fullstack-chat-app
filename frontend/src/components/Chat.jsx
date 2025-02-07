@@ -37,7 +37,6 @@ const Chat = () => {
   useEffect(() => {
     if (messageEndRef.current && messages)
       messageEndRef.current.scrollIntoView({ behavior: "smooth" });
-    
   }, [messages]);
 
   if (isMessagesLoading)
@@ -49,7 +48,7 @@ const Chat = () => {
       </div>
     );
   return (
-    <div className="w-[70%] flex-1 flex flex-col overflow-auto">
+    <div className="w-[70%] relative flex-1 flex flex-col overflow-auto">
       <ChatHeader />
 
       <div className="overflow-y-auto  space-y-4 p-2">

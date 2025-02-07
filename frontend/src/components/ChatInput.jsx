@@ -45,7 +45,7 @@ const ChatInput = () => {
   };
 
   return (
-    <div className="w-[98%] ">
+    <div className="w-[98%] absolute bottom-[.3px] right-4 bg-base-100 ">
       {imgPreview && (
         <div className="relative mb-3 pl-2">
           <img src={imgPreview} alt="" className="size-28 rounded-xl" />
